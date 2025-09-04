@@ -1,0 +1,17 @@
+---
+# LOVD API Client Configuration
+
+# The genes for which the LOVD API client should look up variants.
+target_gene_symbols:
+  - COL5A1    # Collagen V, alpha-1
+  - COL5A2    # Collagen V, alpha-2
+  - COL1A1    # Collagen I, alpha-1
+
+# The LOVD API client includes these values in its request header, as per the
+# guidelines delineated in LOVD's documentation.
+#
+# You should replace these values with your own email and user agent string.
+#
+email: "hyletic@proton.me"
+user_agent: "Hyletic-Labs/1.0 (ReEDS)"
+...
