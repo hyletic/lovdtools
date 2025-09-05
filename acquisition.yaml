@@ -1,11 +1,12 @@
 ---
 # LOVD API Client Configuration
 
-# The genes for which the LOVD API client should look up variants.
+# The gene symbols for which to query the LOVD API.
+#
 target_gene_symbols:
   - COL5A1    # Collagen V, alpha-1
-  - COL5A2    # Collagen V, alpha-2
-  - COL1A1    # Collagen I, alpha-1
+  # - COL5A2    # Collagen V, alpha-2
+  # - COL1A1    # Collagen I, alpha-1
 
 # The LOVD API client includes these values in its request header, as per the
 # guidelines delineated in LOVD's documentation.
