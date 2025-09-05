@@ -1,6 +1,6 @@
 [project]
 name = "lovdtools"
-description = "A fluent API client for the Global Variome shared LOVD instance."
+description = "A fluent API client for the global shared LOVD instance."
 license = "MIT"
 dynamic = [
   "authors",
@@ -11,11 +11,9 @@ requires-python = ">=3.10"
 dependencies = [
     "numpy>=2.2.6",
     "platformdirs>=4.3.8",
-    "polars>=1.32.0",
     "python-dotenv>=1.1.1",
     "pyyaml>=6.0.2",
     "requests>=2.32.4",
-    "returns>=0.26.0",
     "tqdm>=4.67.1",
 ]
 
@@ -43,5 +41,6 @@ docs = [
     "sphinx-book-theme>=1.1.4",
 ]
 optional = [
-    "xlsxwriter>=3.2.5",
+    "polars>=1.32.0",
+    "xlsxwriter>=3.2.5"
 ]
