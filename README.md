@@ -1,5 +1,6 @@
 # LOVDTools
 
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hyletic.github.io/lovdtools/)
 ![PyPI](https://img.shields.io/pypi/v/lovdtools)
 ![Python Version](https://img.shields.io/pypi/pyversions/lovdtools)
 ![License](https://img.shields.io/pypi/l/lovdtools)
