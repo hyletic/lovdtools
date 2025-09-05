@@ -8,15 +8,15 @@
 ![Development Status](https://img.shields.io/pypi/status/lovdtools)
 
 This package aims to provide a fluent interface for acquiring variant records
-from the Leiden Open Variants Database (LOVD). Because it is so new, the `lovdtools`
+from the Leiden Open Variants Database (LOVD). Because it is so new, the `lovd`
 package is by no means feature-complete, and its API is not stable enough for
 production use. That said, if you do decide to experiment with any of its client
 interfaces, feel free to provide feedback.
 
 ## Installation
 
-The `lovdtools` package is available on PyPI, so you can simply install it with `pip`
-(or your favorite drop-in):
+The `lovd` package is available on PyPI as `lovdtools`, so you can simply install it 
+with `pip` (or your favorite drop-in):
 
 ```bash
 # Create a new virtual environment to avoid dependency conflicts.
