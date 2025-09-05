@@ -1,4 +1,4 @@
-# LOVD Tools
+# LOVDTools
 
 ![PyPI](https://img.shields.io/pypi/v/lovdtools)
 ![Python Version](https://img.shields.io/pypi/pyversions/lovdtools)
