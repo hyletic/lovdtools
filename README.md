@@ -2,7 +2,6 @@
 
 [![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://hyletic.github.io/lovdtools/)
 ![PyPI](https://img.shields.io/pypi/v/lovdtools)
-
 ![Python Version](https://img.shields.io/python/required-version-toml?tomlFilePath=https%3A%2F%2Fraw.githubusercontent.com%2Fhyletic%2Flovdtools%2Frefs%2Fheads%2Fmain%2Fpyproject.toml)
 ![License](https://img.shields.io/github/license/hyletic/lovdtools)
 
