@@ -6,7 +6,7 @@
 LOVDTools is still under active development, so its public API is liable to change frequently and without notice, making it unsuitable for use in production environments.
 :::
 
-This is the documentation for [``lovdtools``](https://github.com/hyletic/lovdtools.git), a Python package that provides configurable utilities for acquiring variant records from the global shared Leiden Open Variation Database (LOVD) instance. It abstracts away much of the complexity surrounding large-scale data requisitions by wrapping the LOVD data retrieval API in a fluent Python interface suitable both for scripting and interactive use cases. Originally written to support his ongoing research on genotypic variance in the manifestation of the Ehlers–Danlos Syndromes, [``@hyletic``](https://github.com/hyletic) provides this tool to the public, free of charge, in hopes that it might one day serve to make these data more accessible to clinicians, researchers, and patients alike.
+[``lovdtools``](https://github.com/hyletic/lovdtools.git) is a Python package that provides configurable utilities for acquiring variant records from the global shared Leiden Open Variation Database (LOVD) instance. It abstracts away much of the complexity surrounding large-scale data requisitions by wrapping the LOVD data retrieval API in a fluent Python interface suitable both for scripting and interactive use cases. Originally written to support his ongoing research on genotypic variance in the manifestation of the Ehlers–Danlos Syndromes, [``@hyletic``](https://github.com/hyletic) provides this tool to the public, free of charge, in hopes that it might one day serve to make these data more accessible to clinicians, researchers, and patients alike.
 
 :::{toctree}
 :maxdepth: 2
