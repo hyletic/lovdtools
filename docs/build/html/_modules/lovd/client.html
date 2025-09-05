@@ -1,0 +1,1181 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lovd.client &#8212; LOVDTools</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=eba8b062" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="../../_static/documentation_options.js?v=c8519b9d"></script>
+    <script src="../../_static/doctools.js?v=9bcbadda"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/lovd/client';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search..."
+         aria-label="Search..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">LOVDTools</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">API Reference</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../core.html">Core Exports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../config.html">Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../constants.html">Constants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../client.html">LOVD API Client</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://github.com/hyletic/lovdtools.git" target="_blank"
+   class="btn btn-sm btn-source-repository-button"
+   title="Source repository"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1></h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for lovd.client</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">LOVD Client</span>
+<span class="sd">===========</span>
+
+<span class="sd">This module defines and implements an interface for querying the global</span>
+<span class="sd">shared Leiden Open Variants Database (LOVD) instance.</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">__future__</span><span class="w"> </span><span class="kn">import</span> <span class="n">annotations</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">logging</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">time</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">typing</span><span class="w"> </span><span class="kn">import</span> <span class="n">Any</span><span class="p">,</span> <span class="n">TypeAlias</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">yaml</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">dotenv</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_dotenv</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">lovd.constants</span><span class="w"> </span><span class="kn">import</span> <span class="n">EMAIL</span><span class="p">,</span> <span class="n">TARGET_GENE_SYMBOLS</span><span class="p">,</span> <span class="n">USER_AGENT_STRING</span>
+
+<span class="c1"># ─── logger setup ───────────────────────────────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<span class="c1"># This `logging.Logger` instance is not used for logging responses to the</span>
+<span class="c1"># LOVD client&#39;s API requests. That logger is defined on `LOVDClient` as</span>
+<span class="c1"># its `.logger` attribute.</span>
+<span class="c1">#</span>
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span>
+    <span class="n">level</span><span class="o">=</span><span class="s2">&quot;INFO&quot;</span><span class="p">,</span>
+    <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">%(name)s</span><span class="s2"> – </span><span class="si">%(message)s</span><span class="s2">&quot;</span>
+<span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
+<span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Logger setup complete.&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ─── type aliases ───────────────────────────────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<span class="n">PathLike</span><span class="p">:</span> <span class="n">TypeAlias</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">PathLike</span>
+
+
+<span class="c1"># ─── get environment variables from `.env` ──────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">load_dotenv</span><span class="p">()</span>
+<span class="k">except</span> <span class="ne">FileNotFoundError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;No dotenv file found: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Unable to read `.env` file: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+
+<span class="c1"># ─── rate limiting ──────────────────────────────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<span class="c1"># The [LOVD 3.0 user manual](https://databases.lovd.nl/shared/docs/manual.html)</span>
+<span class="c1"># stipulates that users ought to limit their API request rates &quot;to a maximum of</span>
+<span class="c1"># 5 per second per server/domain,&quot; which translates to a fixed rate of one</span>
+<span class="c1"># API request per 0.2 seconds.</span>
+<span class="c1">#</span>
+<span class="n">LOVD_RATE_LIMIT</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span>
+
+
+<span class="c1"># ─── configuration loading ──────────────────────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<div class="viewcode-block" id="load_acquisition_config">
+<a class="viewcode-back" href="../../client.html#lovd.client.load_acquisition_config">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">load_acquisition_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Load the data acquisition configuration from ``acquisition.yaml``.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    config_path : PathLike, optional</span>
+<span class="sd">        A path-like object representing the acquisition config filepath.</span>
+<span class="sd">        If left unspecified, this function will search for</span>
+<span class="sd">        ``acquisition.yaml`` first in the current working directory and</span>
+<span class="sd">        then ``~/.lovdtools``, if necessary.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict[str, Any]</span>
+<span class="sd">        A dictionary object that maps options to their configured values.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">default_config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;target_gene_symbols&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;search_terms&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="s2">&quot;custom_filters&quot;</span><span class="p">:</span> <span class="p">{},</span>
+        <span class="s2">&quot;save_to&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;logging_level&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;is_progress_enabled&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+        <span class="s2">&quot;rate_limit&quot;</span><span class="p">:</span> <span class="n">LOVD_RATE_LIMIT</span><span class="p">,</span>
+        <span class="s2">&quot;user_agent&quot;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="s2">&quot;email&quot;</span><span class="p">:</span> <span class="kc">None</span>
+    <span class="p">}</span>
+    
+    <span class="n">config_paths_to_try</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="k">if</span> <span class="n">config_path</span><span class="p">:</span>
+        <span class="n">config_paths_to_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="n">config_path</span><span class="p">))</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="c1"># First, look in the current working directory.</span>
+        <span class="n">config_paths_to_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;acquisition.yaml&quot;</span><span class="p">))</span>
+        <span class="n">config_paths_to_try</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">Path</span><span class="p">(</span><span class="s2">&quot;acquisition.yml&quot;</span><span class="p">))</span>
+        
+        <span class="c1"># If the current working directory does not contain an acquisition</span>
+        <span class="c1"># configuration file (i.e., ``acquisition.yaml``), check for its</span>
+        <span class="c1"># existence in ``~/.lovdtools``.</span>
+        <span class="n">home_config_dir</span> <span class="o">=</span> <span class="n">Path</span><span class="o">.</span><span class="n">home</span><span class="p">()</span> <span class="o">/</span> <span class="s2">&quot;.lovdtools&quot;</span>
+        <span class="n">config_paths_to_try</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span>
+            <span class="n">home_config_dir</span> <span class="o">/</span> <span class="s2">&quot;acquisition.yaml&quot;</span><span class="p">,</span>
+            <span class="n">home_config_dir</span> <span class="o">/</span> <span class="s2">&quot;acquisition.yml&quot;</span>
+        <span class="p">])</span>
+    
+    <span class="n">config</span> <span class="o">=</span> <span class="n">default_config</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+    
+    <span class="k">for</span> <span class="n">config_file</span> <span class="ow">in</span> <span class="n">config_paths_to_try</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">config_file</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">config_file</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                    <span class="n">user_config</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">safe_load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="ow">or</span> <span class="p">{}</span>
+                
+                <span class="c1"># Merge the user&#39;s config specifications with defaults.</span>
+                <span class="n">config</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">user_config</span><span class="p">)</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Loaded configuration from </span><span class="si">{</span><span class="n">config_file</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">break</span>
+            <span class="k">except</span> <span class="p">(</span><span class="n">yaml</span><span class="o">.</span><span class="n">YAMLError</span><span class="p">,</span> <span class="ne">OSError</span><span class="p">)</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to load config from </span><span class="si">{</span><span class="n">config_file</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                <span class="k">continue</span>
+    
+    <span class="k">return</span> <span class="n">config</span></div>
+
+
+
+<span class="c1"># ─── interface ──────────────────────────────────────────────────────────────────── ✦ ─</span>
+<span class="c1">#</span>
+<div class="viewcode-block" id="LOVDClient">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">LOVDClient</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    A client for interacting with the global shared LOVD instance&#39;s API.   </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+<div class="viewcode-block" id="LOVDClient.__init__">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.__init__">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">config_path</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">email</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">target_gene_symbols</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">user_agent</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">logging_level</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">is_progress_enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Initialize the LOVD API client.</span>
+
+<span class="sd">        Parameters can be provided directly or loaded from</span>
+<span class="sd">        ``acquisition.yaml``. Direct parameters override configuration</span>
+<span class="sd">        file values.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        config_path : PathLike, optional</span>
+<span class="sd">            A path-like object representing the acquisition configuration</span>
+<span class="sd">            filepath. If left unspecified, this constructor searches for</span>
+<span class="sd">            ``acquisition.yaml`` first in the current working directory</span>
+<span class="sd">            and then, ``~/.lovdtools/``. Defaults to ``None``.</span>
+<span class="sd">        email : str, optional</span>
+<span class="sd">            A string representing the email address to use for user agent</span>
+<span class="sd">            identification. If specified, this parameter overrides</span>
+<span class="sd">            the acquisition configuration file. Defaults to ``None``.</span>
+<span class="sd">        target_gene_symbols : list[str], optional</span>
+<span class="sd">            A list of strings representing the gene symbols for which to</span>
+<span class="sd">            query LOVD. Defaults to ``None``.</span>
+<span class="sd">        user_agent : str, optional</span>
+<span class="sd">            A short description of your application. If specified, this</span>
+<span class="sd">            parameter overrides the acquisition configuration file.</span>
+<span class="sd">            Defaults to ``None``.</span>
+<span class="sd">        logging_level : int, optional</span>
+<span class="sd">            An integer value between 1 and 5 inclusive that controls the</span>
+<span class="sd">            verbosity level to use in logging output. If specified, this</span>
+<span class="sd">            parameter overrides the acquisition configuration file.</span>
+<span class="sd">            Defaults to ``None``.</span>
+<span class="sd">        is_progress_enabled : bool, optional</span>
+<span class="sd">            A boolean value that controls whether the client displays a</span>
+<span class="sd">            progress indicator during execution. Defaults to ``None``.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="n">load_acquisition_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
+
+        <span class="c1"># ─── configuration ────────────────────────────────────────────────────────────</span>
+        <span class="c1">#</span>
+        <span class="c1"># Each of the client&#39;s configurable attributes is resolved</span>
+        <span class="c1"># in the following order:</span>
+        <span class="c1">#</span>
+        <span class="c1">#   1.  The argument passed to the corresponding parameter in this</span>
+        <span class="c1">#       constructor, if set.</span>
+        <span class="c1">#   2.  The value assigned to the corresponding key in the</span>
+        <span class="c1">#       `acquisition.yaml` configuration file, if set.</span>
+        <span class="c1">#   3.  The value assigned to to the corresponding environment</span>
+        <span class="c1">#       variable, if set.</span>
+        <span class="c1">#</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">email</span> <span class="ow">or</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;email&quot;</span><span class="p">)</span> <span class="ow">or</span> 
+            <span class="n">EMAIL</span> <span class="ow">or</span> 
+            <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;LOVD_EMAIL&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">target_gene_symbols</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">target_gene_symbols</span> <span class="ow">or</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;target_gene_symbols&quot;</span><span class="p">)</span> <span class="ow">or</span>
+            <span class="n">TARGET_GENE_SYMBOLS</span> <span class="ow">or</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;TARGET_GENE_SYMBOLS&quot;</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">user_agent</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">user_agent</span> <span class="ow">or</span> 
+            <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;user_agent&quot;</span><span class="p">)</span> <span class="ow">or</span>
+            <span class="n">USER_AGENT_STRING</span> <span class="ow">or</span> 
+            <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&quot;USER_AGENT_STRING&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">logging_level</span> <span class="k">if</span> <span class="n">logging_level</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;logging_level&quot;</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="n">is_progress_enabled</span> <span class="k">if</span> <span class="n">is_progress_enabled</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+            <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;is_progress_enabled&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="p">)</span>
+        
+        <span class="c1"># Set up logging</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span>
+                <span class="n">level</span><span class="o">=</span><span class="p">(</span>
+                    <span class="s2">&quot;CRITICAL&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">1</span>
+                    <span class="k">else</span> <span class="s2">&quot;ERROR&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">2</span>
+                    <span class="k">else</span> <span class="s2">&quot;WARNING&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">3</span>
+                    <span class="k">else</span> <span class="s2">&quot;INFO&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">4</span>
+                    <span class="k">else</span> <span class="s2">&quot;DEBUG&quot;</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">5</span>
+                    <span class="k">else</span> <span class="mi">1</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Logger setup complete.&quot;</span><span class="p">)</span>
+
+        <span class="n">rate_limit</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;rate_limit&quot;</span><span class="p">,</span> <span class="n">LOVD_RATE_LIMIT</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">request_interval</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1.0</span> <span class="o">/</span> <span class="n">rate_limit</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_request_time</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">0.0</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;https://databases.lovd.nl/shared/api/rest.php&quot;</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">session</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">Session</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">headers</span><span class="o">.</span><span class="n">update</span><span class="p">({</span>
+            <span class="s2">&quot;User-Agent&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">user_agent</span><span class="p">,</span>
+            <span class="s2">&quot;Accept&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span>
+        <span class="p">})</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="n">is_progress_enabled</span></div>
+
+
+
+<div class="viewcode-block" id="LOVDClient.from_config">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.from_config">[docs]</a>
+    <span class="nd">@classmethod</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">from_config</span><span class="p">(</span><span class="bp">cls</span><span class="p">,</span> <span class="n">config_path</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;LOVDClient&quot;</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Create a client instance from ``acquisition.yaml`` configuration.</span>
+<span class="sd">        </span>
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        config_path : PathLike, optional</span>
+<span class="sd">            A path-like object representing the acquisition configuration</span>
+<span class="sd">            filepath. If left unspcecified, this method searches for the </span>
+<span class="sd">            configuration file both in the current working directory and,</span>
+<span class="sd">            if necessary, ``~/.lovdtools/``. Defaults to ``None``.</span>
+<span class="sd">            </span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        LOVDClient</span>
+<span class="sd">            A configured instance of the LOVD API client.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">cls</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">config_path</span><span class="p">)</span></div>
+
+
+
+    <span class="c1"># ─── dunder methods ───────────────────────────────────────────────────────────────</span>
+    <span class="c1">#</span>
+<div class="viewcode-block" id="LOVDClient.__repr__">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.__repr__">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__repr__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get a code literal representation of the object instance.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        str</span>
+<span class="sd">            Code literal that could be used to reconstruct this</span>
+<span class="sd">            ``LOVDClient`` instance as it is currently configured.</span>
+<span class="sd">        </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="p">(</span>
+            <span class="sa">f</span><span class="s2">&quot;LOVDClient(email=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">email</span><span class="si">!r}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;target_gene_symbols=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">target_gene_symbols</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;user_agent=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">user_agent</span><span class="si">!r}</span><span class="s2">), &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;logging_level=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span><span class="si">}</span><span class="s2">, &quot;</span>
+            <span class="sa">f</span><span class="s2">&quot;is_progress_enabled=</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span><span class="si">}</span><span class="s2">)&quot;</span>
+        <span class="p">)</span></div>
+
+
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">_rate_limit</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Limit the client&#39;s request rate.&quot;&quot;&quot;</span>
+        <span class="n">current_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+        <span class="n">time_since_last</span> <span class="o">=</span> <span class="n">current_time</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">last_request_time</span>
+
+        <span class="k">if</span> <span class="n">time_since_last</span> <span class="o">&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_interval</span><span class="p">:</span>
+            <span class="n">sleep_time</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">request_interval</span> <span class="o">-</span> <span class="n">time_since_last</span>
+            <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">sleep_time</span><span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">last_request_time</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">time</span><span class="p">()</span>
+
+
+<div class="viewcode-block" id="LOVDClient.get_variants_from_config">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.get_variants_from_config">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_variants_from_config</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get variants using settings from the loaded configuration.</span>
+<span class="sd">        </span>
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        dict[str, dict[str, Any]]</span>
+<span class="sd">            Variant data for all genes specified in configuration</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;target_gene_symbols&quot;</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+                <span class="s2">&quot;No target gene symbols have been configured.</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;Specify your target gene symbols, either in your `acquisition.yaml` &quot;</span>
+                <span class="s2">&quot;or by setting this `LOVDClient` instance&#39;s `target_gene_symbols` &quot;</span>
+                <span class="s2">&quot;attribute directly.&quot;</span>
+            <span class="p">)</span>
+            
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_variants_for_genes</span><span class="p">(</span>
+            <span class="n">target_gene_symbols</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;target_gene_symbols&quot;</span><span class="p">],</span>
+            <span class="n">save_to</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;save_to&quot;</span><span class="p">),</span>
+            <span class="n">search_terms</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;search_terms&quot;</span><span class="p">),</span>
+            <span class="n">custom_filters</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;custom_filters&quot;</span><span class="p">),</span>
+            <span class="n">is_progress_enabled</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span>
+        <span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="LOVDClient.get_variants_for_gene">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.get_variants_for_gene">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_variants_for_gene</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> 
+        <span class="n">target_gene</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+        <span class="n">search_terms</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">include_effect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">custom_filters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get variant data for a single gene from LOVD.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        target_gene : str</span>
+<span class="sd">            A string that represents the gene symbol for which to query</span>
+<span class="sd">            the LOVD API.</span>
+<span class="sd">        search_terms : list[str] | None, optional</span>
+<span class="sd">            A list of strings comprising additional terms to include in</span>
+<span class="sd">            the LOVD query. Defaults to ``None``.</span>
+<span class="sd">        include_effect : bool</span>
+<span class="sd">            A boolean value that determines whether the API request</span>
+<span class="sd">            sets the ``show_effect`` parameter to ``1``.</span>
+<span class="sd">            Defaults to ``True``.</span>
+<span class="sd">        custom_filters : dict[str, str], optional</span>
+<span class="sd">            Additional parameters to include in the API request, provided</span>
+<span class="sd">            as a dictionary that maps parameter names to their arguments.</span>
+<span class="sd">            Defaults to ``None``.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        dict[str, Any]</span>
+<span class="sd">            A dictionary representing the JSON received in response to the</span>
+<span class="sd">            LOVD API request.</span>
+
+<span class="sd">        Raises</span>
+<span class="sd">        ------</span>
+<span class="sd">        requests.RequestException</span>
+<span class="sd">            An exception raised whenever the LOVD API request fails.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_rate_limit</span><span class="p">()</span>
+
+        <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">base_url</span><span class="si">}</span><span class="s2">/variants/</span><span class="si">{</span><span class="n">target_gene</span><span class="si">}</span><span class="s2">&quot;</span>
+        <span class="n">params</span> <span class="o">=</span> <span class="p">(</span>
+            <span class="p">{</span><span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">}</span> <span class="k">if</span> <span class="ow">not</span> <span class="n">include_effect</span>
+            <span class="k">else</span> <span class="p">{</span><span class="s2">&quot;format&quot;</span><span class="p">:</span> <span class="s2">&quot;application/json&quot;</span><span class="p">,</span> <span class="s2">&quot;show_variant_effect&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">}</span>
+        <span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">search_terms</span><span class="p">:</span>
+            <span class="n">search_query</span> <span class="o">=</span> <span class="s2">&quot; OR &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;&quot;</span><span class="si">{</span><span class="n">term</span><span class="si">}</span><span class="s1">&quot;&#39;</span> <span class="k">for</span> <span class="n">term</span> <span class="ow">in</span> <span class="n">search_terms</span><span class="p">)</span>
+            <span class="n">params</span><span class="p">[</span><span class="s2">&quot;search&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">search_query</span>
+
+        <span class="k">if</span> <span class="n">custom_filters</span><span class="p">:</span>
+            <span class="n">params</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">custom_filters</span><span class="p">)</span>
+
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">response</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">session</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">params</span><span class="p">)</span>
+            <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+            <span class="n">json_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+            
+            <span class="k">return</span> <span class="n">json_data</span>
+            
+        <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">requests</span><span class="o">.</span><span class="n">RequestException</span><span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;Failed to fetch data for </span><span class="si">{</span><span class="n">target_gene</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span>
+            <span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="LOVDClient.get_variants_for_genes">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.get_variants_for_genes">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_variants_for_genes</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> 
+        <span class="n">target_gene_symbols</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">save_to</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">search_terms</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">include_effect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+        <span class="n">custom_filters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Get variant data for multiple genes from LOVD.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        target_gene_symbols : list[str], optional</span>
+<span class="sd">            A list of strings comprising the gene symbols for which</span>
+<span class="sd">            to query the global shared LOVD instance. Defaults to</span>
+<span class="sd">            ``None``.</span>
+<span class="sd">        save_to : PathLike, optional</span>
+<span class="sd">            A path-like object representing the path to which the client</span>
+<span class="sd">            saves JSON outputs. Defaults to ``None``.</span>
+<span class="sd">        search_terms : list[str], optional</span>
+<span class="sd">            A list of strings representing search terms to include.</span>
+<span class="sd">            Defaults to ``None``.</span>
+<span class="sd">        include_effect : bool</span>
+<span class="sd">            A boolean value that determines whether the API request</span>
+<span class="sd">            sets the ``show_effect`` parameter to ``1``.</span>
+<span class="sd">            Defaults to ``True``.</span>
+<span class="sd">        custom_filters : dict[str, str], optional</span>
+<span class="sd">            Additional parameters to include in the API request, provided</span>
+<span class="sd">            as a dictionary that maps parameter names to their arguments.</span>
+<span class="sd">            Defaults to ``None``.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        dict[str, dict[str, Any]]</span>
+<span class="sd">            A nested dictionary mapping gene symbols to their variants.</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">level</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">CRITICAL</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">1</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">2</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">3</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">INFO</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">4</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">5</span>
+                <span class="k">else</span> <span class="mi">1</span>
+            <span class="p">)</span>
+
+        <span class="n">downloaded</span> <span class="o">=</span> <span class="p">{}</span>
+        
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">target_gene_symbols</span><span class="p">:</span>
+            <span class="n">target_gene_symbols</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">target_gene_symbols</span>
+
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span>
+                <span class="n">target_gene_symbols</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">target_gene_symbols</span><span class="p">)</span>
+            <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Failed to import `tqdm`: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    <span class="k">pass</span>
+
+        <span class="k">for</span> <span class="n">gene_symbol</span> <span class="ow">in</span> <span class="n">target_gene_symbols</span><span class="p">:</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="n">filter_desc</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">if</span> <span class="n">search_terms</span><span class="p">:</span>
+                        <span class="n">filter_desc</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;search: </span><span class="si">{</span><span class="n">search_terms</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+                    
+                    <span class="n">filter_msg</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="sa">f</span><span class="s2">&quot; (</span><span class="si">{</span><span class="s1">&#39;, &#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">filter_desc</span><span class="p">)</span><span class="si">}</span><span class="s2">)&quot;</span> <span class="k">if</span> <span class="n">filter_desc</span> <span class="k">else</span> <span class="s2">&quot;&quot;</span>
+                    <span class="p">)</span>
+
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span>
+                        <span class="sa">f</span><span class="s2">&quot;Fetching variants for </span><span class="si">{</span><span class="n">gene_symbol</span><span class="si">}{</span><span class="n">filter_msg</span><span class="si">}</span><span class="s2">...&quot;</span>
+                    <span class="p">)</span>
+
+                <span class="n">data</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_variants_for_gene</span><span class="p">(</span>
+                    <span class="n">target_gene</span><span class="o">=</span><span class="n">gene_symbol</span><span class="p">,</span>
+                    <span class="n">search_terms</span><span class="o">=</span><span class="n">search_terms</span><span class="p">,</span>
+                    <span class="n">include_effect</span><span class="o">=</span><span class="n">include_effect</span><span class="p">,</span>
+                    <span class="n">custom_filters</span><span class="o">=</span><span class="n">custom_filters</span>
+                <span class="p">)</span>
+
+                <span class="n">downloaded</span><span class="p">[</span><span class="n">gene_symbol</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span>
+
+                <span class="k">if</span> <span class="n">save_to</span><span class="p">:</span>
+                    <span class="n">save_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">save_to</span><span class="p">)</span>
+                    <span class="n">save_path</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">parents</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">exist_ok</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+                    <span class="c1"># Create descriptive filename</span>
+                    <span class="n">suffix_parts</span> <span class="o">=</span> <span class="p">[]</span>
+                    <span class="k">if</span> <span class="n">search_terms</span><span class="p">:</span>
+                        <span class="n">suffix_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;filtered&quot;</span><span class="p">)</span>
+                    
+                    <span class="n">suffix</span> <span class="o">=</span> <span class="p">(</span>
+                        <span class="sa">f</span><span class="s2">&quot;_</span><span class="si">{</span><span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">suffix_parts</span><span class="p">)</span><span class="si">}</span><span class="s2">_variants.json&quot;</span>
+                        <span class="k">if</span> <span class="n">suffix_parts</span>
+                        <span class="k">else</span> <span class="s2">&quot;_variants.json&quot;</span>
+                    <span class="p">)</span>
+
+                    <span class="n">gene_file</span> <span class="o">=</span> <span class="n">save_path</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">gene_symbol</span><span class="si">}{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">&quot;</span>
+
+                    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">gene_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                        <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+                        <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">({</span><span class="n">gene_symbol</span><span class="p">:</span> <span class="n">data</span><span class="p">},</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+                    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved </span><span class="si">{</span><span class="n">gene_symbol</span><span class="si">}</span><span class="s2"> data to `</span><span class="si">{</span><span class="n">gene_file</span><span class="si">}</span><span class="s2">`.&quot;</span><span class="p">)</span>
+
+            <span class="k">except</span> <span class="n">requests</span><span class="o">.</span><span class="n">RequestException</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Error fetching data for </span><span class="si">{</span><span class="n">gene_symbol</span><span class="si">}</span><span class="s2">: </span><span class="si">{</span><span class="n">e</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+                <span class="n">downloaded</span><span class="p">[</span><span class="n">gene_symbol</span><span class="p">]</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;error&quot;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">e</span><span class="p">)}</span>
+
+        <span class="k">if</span> <span class="n">save_to</span><span class="p">:</span>
+            <span class="n">save_path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">save_to</span><span class="p">)</span>
+            <span class="n">suffix_parts</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="k">if</span> <span class="n">search_terms</span><span class="p">:</span>
+                <span class="n">suffix_parts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;filtered&quot;</span><span class="p">)</span>
+            
+            <span class="n">suffix</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="sa">f</span><span class="s2">&quot;_</span><span class="si">{</span><span class="s1">&#39;_&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">suffix_parts</span><span class="p">)</span><span class="si">}</span><span class="s2">_variants.json&quot;</span>
+                <span class="k">if</span> <span class="n">suffix_parts</span>
+                <span class="k">else</span> <span class="s2">&quot;_variants.json&quot;</span>
+            <span class="p">)</span>
+            <span class="n">combined_file</span> <span class="o">=</span> <span class="n">save_path</span> <span class="o">/</span> <span class="sa">f</span><span class="s2">&quot;all</span><span class="si">{</span><span class="n">suffix</span><span class="si">}</span><span class="s2">&quot;</span>
+            
+            <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">combined_file</span><span class="p">,</span> <span class="s2">&quot;w&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                <span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+                <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">downloaded</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ensure_ascii</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;=</span> <span class="mi">4</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Saved combined data to `</span><span class="si">{</span><span class="n">combined_file</span><span class="si">}</span><span class="s2">`.&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="n">downloaded</span></div>
+
+
+
+    <span class="c1"># ─── chainable methods ────────────────────────────────────────────────────────────</span>
+    <span class="c1">#</span>
+    <span class="c1"># The remaining methods defined on this class mutates and then returns</span>
+    <span class="c1"># `self`. That is, they all modify the `LOVDClient` instance on which</span>
+    <span class="c1"># they are called and then return the modified instance</span>
+    <span class="c1"># (NOT a copy of it).</span>
+    <span class="c1">#</span>
+<div class="viewcode-block" id="LOVDClient.with_progress">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.with_progress">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">with_progress</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LOVDClient</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Enable the client&#39;s ``tqdm`` progress indicator.&quot;&quot;&quot;</span>
+        <span class="kn">from</span><span class="w"> </span><span class="nn">importlib.util</span><span class="w"> </span><span class="kn">import</span> <span class="n">find_spec</span>
+
+        <span class="k">if</span> <span class="n">find_spec</span><span class="p">(</span><span class="s2">&quot;tqdm&quot;</span><span class="p">):</span>
+            <span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span> <span class="k">as</span> <span class="n">tqdm</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">is_progress_enabled</span> <span class="o">=</span> <span class="kc">True</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                    <span class="s2">&quot;`tqdm` does not appear to be installed, so `.with_progress()`</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;has no effect. To suppress this warning, run the following</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;commands from within your working environment:</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;   python -m pip install --upgrade pip</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;   pip install tqdm</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;This will install the `tqdm` package from the Python Packaging</span><span class="se">\n</span><span class="s2">&quot;</span>
+                    <span class="s2">&quot;index.&quot;</span>
+                <span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+
+
+
+<div class="viewcode-block" id="LOVDClient.with_logging">
+<a class="viewcode-back" href="../../client.html#lovd.client.LOVDClient.with_logging">[docs]</a>
+    <span class="k">def</span><span class="w"> </span><span class="nf">with_logging</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">level</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">LOVDClient</span><span class="p">:</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Enable the LOVD API client&#39;s logger.</span>
+
+<span class="sd">        Parameters</span>
+<span class="sd">        ----------</span>
+<span class="sd">        level : int</span>
+<span class="sd">            An integer between 0 and 5 inclusive that determines the</span>
+<span class="sd">            logger&#39;s verbosity, with higher values corresponding to wordier</span>
+<span class="sd">            logging output.</span>
+
+<span class="sd">        Returns</span>
+<span class="sd">        -------</span>
+<span class="sd">        Self.</span>
+<span class="sd">        </span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">=</span> <span class="n">level</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">hasattr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="s2">&quot;logger&quot;</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__class__</span><span class="o">.</span><span class="vm">__name__</span><span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">level</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">logging</span><span class="o">.</span><span class="n">CRITICAL</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">1</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">ERROR</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">2</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">WARNING</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">3</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">INFO</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">4</span>
+                <span class="k">else</span> <span class="n">logging</span><span class="o">.</span><span class="n">DEBUG</span> <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">logging_level</span> <span class="o">==</span> <span class="mi">5</span>
+                <span class="k">else</span> <span class="mi">1</span>
+            <span class="p">)</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">logger</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;`LOVDClient` logger setup complete.&quot;</span><span class="p">)</span>
+
+        <span class="k">return</span> <span class="bp">self</span></div>
+</div>
+
+
+
+<div class="viewcode-block" id="get_lovd_variants">
+<a class="viewcode-back" href="../../client.html#lovd.client.get_lovd_variants">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_lovd_variants</span><span class="p">(</span>
+    <span class="n">genes</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">save_to</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">include_effect</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span><span class="p">,</span>
+    <span class="n">search_terms</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">custom_filters</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="n">config_path</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get a JSON dictionary containing variants for the specified gene(s).</span>
+
+<span class="sd">    This is a convenience method. Internally, it creates a ``LOVDClient``</span>
+<span class="sd">    instance, loads its acquisition config file, and calls its</span>
+<span class="sd">    ``.get_variants_for_genes()`` method.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    genes : str | list[str], optional</span>
+<span class="sd">        A string or list of strings representing the gene symbol(s)</span>
+<span class="sd">        to query. Defaults to ``None``.</span>
+<span class="sd">    save_to : PathLike, optional</span>
+<span class="sd">        A path-like object representing the location at which downloaded</span>
+<span class="sd">        data should be saved. If specified, this argument overrides the</span>
+<span class="sd">        value set for the ``save_to`` key in the acquisition config file.</span>
+<span class="sd">        Defaults to ``None``.</span>
+<span class="sd">    include_effect : bool</span>
+<span class="sd">        A boolean value that determines whether the client sets the API</span>
+<span class="sd">        request&#39;s ``show_variant_effect`` parameter to ``1``. Defaults to</span>
+<span class="sd">        ``True``.</span>
+<span class="sd">    search_terms : list[str], optional</span>
+<span class="sd">        A list of strings comprising the search terms by which to filter</span>
+<span class="sd">        variants (e.g., disease names, phenotypes). If specified, this</span>
+<span class="sd">        argument overrides the value set for the ``search_terms`` key in</span>
+<span class="sd">        the acquisition config file. Defaults to ``None``.</span>
+<span class="sd">    custom_filters : dict[str, str] | None, optional</span>
+<span class="sd">        Additional parameters to include in the API request, provided</span>
+<span class="sd">        as a dictionary that maps parameter names to their arguments.</span>
+<span class="sd">        Defaults to ``None``.</span>
+<span class="sd">    config_path : PathLike, optional</span>
+<span class="sd">        A path-like object that points to the location of the acquisition</span>
+<span class="sd">        config file. Defaults to ``None``.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict[str, dict]</span>
+<span class="sd">        A dictionary object that contains the data downloaded from LOVD,</span>
+<span class="sd">        keyed by gene symbol.</span>
+<span class="sd">    </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; # Use acquisition config file only.</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_lovd_variants()</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Override genes from config.</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_lovd_variants(genes=[&quot;COL1A1&quot;, &quot;COL3A1&quot;])</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Search for a specific disease.</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_lovd_variants(</span>
+<span class="sd">    ...     [&quot;COL1A1&quot;], </span>
+<span class="sd">    ...     search_terms=[&quot;Ehlers-Danlos&quot;, &quot;connective tissue disorder&quot;]</span>
+<span class="sd">    ... )</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Use an acquisition config file located at a nonstandard path.</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_lovd_variants(config_path=&quot;my_project.yaml&quot;)</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">LOVDClient</span><span class="p">(</span><span class="n">config_path</span><span class="o">=</span><span class="n">config_path</span><span class="p">)</span>
+    
+    <span class="c1"># Use config values as defaults, overriding with any specified parameters.</span>
+    <span class="n">target_gene_symbols</span> <span class="o">=</span> <span class="n">genes</span> <span class="ow">or</span> <span class="n">client</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;target_gene_symbols&quot;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">target_gene_symbols</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">target_gene_symbols</span> <span class="o">=</span> <span class="p">[</span><span class="n">target_gene_symbols</span><span class="p">]</span>
+    
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">target_gene_symbols</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span>
+            <span class="s2">&quot;No target gene symbols have been configured.</span><span class="se">\n</span><span class="s2">&quot;</span>
+            <span class="s2">&quot;Specify your target gene symbols, either in your `acquisition.yaml` &quot;</span>
+            <span class="s2">&quot;or by setting this `LOVDClient` instance&#39;s `target_gene_symbols` &quot;</span>
+            <span class="s2">&quot;attribute directly.&quot;</span>
+        <span class="p">)</span>
+
+    <span class="n">save_to</span> <span class="o">=</span> <span class="n">save_to</span> <span class="k">if</span> <span class="n">save_to</span> <span class="k">else</span> <span class="n">client</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;save_to&quot;</span><span class="p">)</span>
+    <span class="n">search_terms</span> <span class="o">=</span> <span class="n">search_terms</span> <span class="k">if</span> <span class="n">search_terms</span> <span class="k">else</span> <span class="n">client</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;search_terms&quot;</span><span class="p">)</span>
+    <span class="n">custom_filters</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="n">custom_filters</span> <span class="k">if</span> <span class="n">custom_filters</span>
+        <span class="k">else</span> <span class="n">client</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;custom_filters&quot;</span><span class="p">)</span>
+    <span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="n">get_variants_for_genes</span><span class="p">(</span>
+        <span class="n">target_gene_symbols</span><span class="o">=</span><span class="n">target_gene_symbols</span><span class="p">,</span>
+        <span class="n">save_to</span><span class="o">=</span><span class="n">save_to</span><span class="p">,</span> 
+        <span class="n">search_terms</span><span class="o">=</span><span class="n">search_terms</span><span class="p">,</span>
+        <span class="n">custom_filters</span><span class="o">=</span><span class="n">custom_filters</span>
+    <span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="get_variants_from_config">
+<a class="viewcode-back" href="../../client.html#lovd.client.get_variants_from_config">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_variants_from_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">:</span> <span class="n">PathLike</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]]:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Get variants using only settings from the acquisition config file.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    config_path : PathLike, optional</span>
+<span class="sd">        A path-like object that points to the location of an acquisition</span>
+<span class="sd">        config file, first checking in the current working directory and</span>
+<span class="sd">        then, if necessary, in ``~/.lovdtools/``.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict[str, dict]</span>
+<span class="sd">        A dictionary object that contains the data downloaded from LOVD,</span>
+<span class="sd">        keyed by gene symbol.</span>
+<span class="sd">        </span>
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; # Use default config locations</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_variants_from_config()</span>
+<span class="sd">    &gt;&gt;&gt; </span>
+<span class="sd">    &gt;&gt;&gt; # Use specific config file</span>
+<span class="sd">    &gt;&gt;&gt; variants = get_variants_from_config(&quot;eds_study.yaml&quot;)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">client</span> <span class="o">=</span> <span class="n">LOVDClient</span><span class="o">.</span><span class="n">from_config</span><span class="p">(</span><span class="n">config_path</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">client</span><span class="o">.</span><span class="n">get_variants_from_config</span><span class="p">()</span></div>
+
+
+
+<div class="viewcode-block" id="variants_to_dataframe">
+<a class="viewcode-back" href="../../client.html#lovd.client.variants_to_dataframe">[docs]</a>
+<span class="k">def</span><span class="w"> </span><span class="nf">variants_to_dataframe</span><span class="p">(</span>
+    <span class="n">variants_data</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">Any</span><span class="p">]],</span>
+    <span class="n">is_progress_enabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convert LOVD variants data to a Polars data frame for analysis.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    variants_data : dict[str, dict[str, Any]]</span>
+<span class="sd">        Dictionary of variant data returned by the LOVD API client&#39;s</span>
+<span class="sd">        ``.get_variants_for_genes()`` instance method.</span>
+<span class="sd">    is_progress_enabled : bool</span>
+<span class="sd">        A boolean value that determines the progress indicator&#39;s visibility</span>
+<span class="sd">        for this routine.</span>
+<span class="sd">        </span>
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    polars.DataFrame</span>
+<span class="sd">        A Polars data frame that tabulates the variants data acquired from</span>
+<span class="sd">        LOVD.</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">all_variants</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">if</span> <span class="n">is_progress_enabled</span><span class="p">:</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="kn">from</span><span class="w"> </span><span class="nn">tqdm</span><span class="w"> </span><span class="kn">import</span> <span class="n">tqdm</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="n">tqdm</span><span class="p">(</span><span class="n">variants_data</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+        <span class="k">except</span> <span class="ne">ImportError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
+                <span class="s2">&quot;`tqdm` does not appear to be installed, so `.with_progress()`</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;has no effect. To suppress this warning, run the following</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;commands from within your working environment:</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;   python -m pip install --upgrade pip</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;   pip install tqdm</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;This will install the `tqdm` package from the Python Packaging</span><span class="se">\n</span><span class="s2">&quot;</span>
+                <span class="s2">&quot;index.&quot;</span>
+            <span class="p">)</span>
+            <span class="n">items</span> <span class="o">=</span> <span class="n">variants_data</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">variants_data</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+
+    <span class="k">for</span> <span class="n">gene_symbol</span><span class="p">,</span> <span class="n">gene_data</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+        <span class="k">if</span> <span class="s2">&quot;error&quot;</span> <span class="ow">in</span> <span class="n">gene_data</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">gene_data</span><span class="p">,</span> <span class="nb">list</span><span class="p">):</span>
+            <span class="n">variants</span> <span class="o">=</span> <span class="n">gene_data</span>
+        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">gene_data</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="n">variants</span> <span class="o">=</span> <span class="n">gene_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;variants&quot;</span><span class="p">,</span> <span class="n">gene_data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;data&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">gene_data</span><span class="p">]))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="k">for</span> <span class="n">variant</span> <span class="ow">in</span> <span class="n">variants</span><span class="p">:</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">variant</span><span class="p">,</span> <span class="nb">dict</span><span class="p">):</span>
+                <span class="k">continue</span>
+                
+            <span class="n">variant_copy</span> <span class="o">=</span> <span class="n">variant</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+            <span class="n">variant_copy</span><span class="p">[</span><span class="s2">&quot;gene_symbol&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">gene_symbol</span>
+            <span class="n">all_variants</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">variant_copy</span><span class="p">)</span>
+ 
+    <span class="k">return</span> <span class="p">(</span>
+        <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">all_variants</span><span class="p">)</span> <span class="k">if</span> <span class="n">all_variants</span>
+        <span class="k">else</span> <span class="n">pl</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s2">&quot;gene_symbol&quot;</span><span class="p">:</span> <span class="p">[]})</span>
+    <span class="p">)</span></div>
+
+</pre></div>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Caleb Rice
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Caleb Rice.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
