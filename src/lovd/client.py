@@ -2,8 +2,8 @@
 LOVD Client
 ===========
 
-This module defines and implements an interface for querying the global
-shared Leiden Open Variants Database (LOVD) instance.
+This module defines and implements an interface for querying the Global
+Variome shared Leiden Open Variants Database (LOVD) instance.
 
 """
 from __future__ import annotations

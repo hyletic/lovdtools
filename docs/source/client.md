@@ -4,7 +4,8 @@ The `client` module provides the main interface for interacting with LOVD databa
 
 ## Overview
 
-The `LOVDClient` class serves as the entry point to LOVDTools' API client. It is almost certainly the class with which you will most frequently interact.
+The `LOVDClient` class serves as the entry point to LOVDTools' API client. It is
+almost certainly the class with which you will most frequently interact.
 
 ## Basic Usage
 
