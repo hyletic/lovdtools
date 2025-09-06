@@ -32,6 +32,8 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install sphinx mystmd myst-parser linkify-it-py sphinx-book-theme
+        # Install your package in editable mode with its dependencies
+        pip install -e .
         
     - name: Build documentation
       run: |
