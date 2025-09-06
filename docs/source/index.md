@@ -56,10 +56,10 @@ variants = client.get_variants_for_genes()
    :toctree: _autosummary
    :recursive:
 
-   lovdtools.core
-   lovdtools.config
-   lovdtools.constants
-   lovdtools.client
+   lovd.core
+   lovd.config
+   lovd.constants
+   lovd.client
 
 ::: <!-- eval-rst -->
 
