@@ -41,6 +41,7 @@ def load_acquisition_config() -> yaml.YAMLObject:
                     "user_agent": "My-Organization/1.0 (Purpose)"
                 }
                 yaml.safe_dump(data, f)
+                return data
 
     raise FileNotFoundError("`acquisition.yaml` not found in any parent directory.")
 
