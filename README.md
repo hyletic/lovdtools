@@ -6,7 +6,7 @@
 ![License](https://img.shields.io/github/license/hyletic/lovdtools)
 
 This package aims to provide a fluent interface for acquiring variant records
-from the Leiden Open Variants Database (LOVD). It is by no means feature-complete,
+from the Leiden Open Variation Database (LOVD). It is by no means feature-complete,
 and its API is not stable enough for production use. That said, if you do decide 
 to experiment with any of its client interfaces, feel free to provide feedback.
 
