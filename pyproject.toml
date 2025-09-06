@@ -1,6 +1,6 @@
 [project]
 name = "lovdtools"
-description = "A fluent API client for the global shared LOVD instance."
+description = "A fluent API client for the Global Variome shared LOVD instance."
 license = "MIT"
 dynamic = [
   "authors",

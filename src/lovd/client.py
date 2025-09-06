@@ -133,7 +133,7 @@ def load_acquisition_config(config_path: PathLike | None = None) -> dict[str, An
 #
 class LOVDClient:
     """
-    A client for interacting with the global shared LOVD instance's API.   
+    A client for interacting with the Global Variome shared LOVD instance's API.   
     """
 
     def __init__(
@@ -421,7 +421,7 @@ class LOVDClient:
         ----------
         target_gene_symbols : list[str], optional
             A list of strings comprising the gene symbols for which
-            to query the global shared LOVD instance. Defaults to
+            to query the Global Variome shared LOVD instance. Defaults to
             ``None``.
         save_to : PathLike, optional
             A path-like object representing the path to which the client
