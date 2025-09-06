@@ -294,7 +294,7 @@ class LOVDClient:
         return (
             f"LOVDClient(email={self.email!r}, "
             f"target_gene_symbols={self.target_gene_symbols}, "
-            f"user_agent={self.user_agent!r}), "
+            f"user_agent={self.user_agent!r}, "
             f"logging_level={self.logging_level}, "
             f"is_progress_enabled={self.is_progress_enabled})"
         )
