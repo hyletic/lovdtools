@@ -3,7 +3,7 @@
 :::{admonition} Prerelease Notice
 :class: warning
 
-LOVDTools is still under active development, so its public API is liable to change
+LOVDTools is still in early development, so its public API is liable to change
 frequently and without notice. It is not yet suitable for use in production environments.
 :::
 
