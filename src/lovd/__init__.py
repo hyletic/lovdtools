@@ -36,7 +36,7 @@ from .constants import (
 # : package metadata
 __author__ = "Caleb Rice"
 __email__ = "hyletic@proton.me"
-__version__ = "0.1.0-dev1"
+__version__ = "0.1.0-dev2"
 
 
 __all__ = [
