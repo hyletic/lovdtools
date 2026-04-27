@@ -23,7 +23,7 @@ python -m venv lovdenv
 source ./lovdenv/bin/activate
 
 # Upgrade `pip` to the latest version, as a best practice.
-pip install --self-upgrade
+pip install --upgrade pip
 
 # Install the package.
 pip install lovdtools
